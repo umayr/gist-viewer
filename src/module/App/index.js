@@ -20,7 +20,6 @@ class App extends React.Component {
     }
 
     render() {
-        console.log(this.props);
         const { isLoading, data = [], requested, error } = this.props;
 
         return <div className="container">
