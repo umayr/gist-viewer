@@ -28,3 +28,9 @@ with `docker`
     # run the docker image while mounting build folder
     λ docker run --rm -v $(pwd)/build:/app/build -it gist-viewer
 ```
+
+You can serve the production build with any http server like nginx or apache, but for testing purposes:
+
+```bash
+    λ python -m SimpleHTTPServer 8000
+```
